@@ -25,12 +25,12 @@
       <div class="user-menu">
         <div class="user-menu-item">
           <a href="search.html" class="button search-button">Поиск</a>
-          <form action="" method="post">Форма поиска</form>
+          <form action="https://echo.htmlacademy.ru" method="post">Форма поиска</form>
         </div>
 
         <div class="user-menu-item">
           <a href="login.html" class="button login-button">Вход</a>
-          <form action="" method="post">Форма входа</form>
+          <form action="https://echo.htmlacademy.ru" method="post">Форма входа</form>
         </div>
         <div class="user-menu-item">
           <a href="cart.html" class="button cart-button">2 товара</a>
@@ -56,7 +56,7 @@
             </ul>
 
             <p class="total-cost">Итого: 750 руб.</p>
-            <button type="submit" class="button">Оформить заказ</button>
+            <a href="order.html" class="button">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -76,7 +76,51 @@
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="catalog">
         <section class="catalog-options">
-          <!-- Тут будет форма -->
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <filedset class="catalog-options-section">
+              <legend>Сортировка:</legend>
+              <select name="sorting">
+                <option value="popularity" selected>по популярности</option>
+                <option value="cheap first">сначала недорогие</option>
+                <option value="expensive first">сначала дорогие</option>
+                <option value="by fat-content">по жирности</option>
+              </select>
+            </filedset>
+
+            <div class="catalog-options-section">
+              <!-- Временная заглушка для вида -->
+              <p>Цена: 100 руб. - 500 руб.</p>
+              <input type="range" name="range-filter" id="range-filter" min="100" max="900" value="500">
+            </div>
+
+            <filedset class="catalog-options-section">
+              <legend>Жирность:</legend>
+              <input type="radio" name="fat-content" id="zero-fat" value="0">
+              <label for="zero-fat">0%</label>
+              <input type="radio" name="fat-content" id="ten-fat" value="10" checked>
+              <label for="ten-fat">до 10%</label>
+              <input type="radio" name="fat-content" id="thirty-fat" value="30">
+              <label for="thirty-fat">до 30%</label>
+              <input type="radio" name="fat-content" id="more-fat" value="100">
+              <label for="more-fat">выше 30%</label>
+            </filedset>
+
+            <filedset class="catalog-options-section">
+              <legend>Наполнители:</legend>
+              <input type="checkbox" name="choco" id="choco" checked>
+              <label for="choco">шоколадные</label>
+              <input type="checkbox" name="sugar" id="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+              <input type="checkbox" name="fruits" id="fruits">
+              <label for="fruits">фрукты</label>
+              <input type="checkbox" name="syrup" id="syrup">
+              <label for="syrup">сироп</label>
+              <input type="checkbox" name="jam" id="jam">
+              <label for="jam">джем</label>
+            </filedset>
+
+            <button type="submit">Применить</button>
+          </form>
         </section>
 
         <section class="catalog-items">
@@ -196,10 +240,10 @@
       <section class="social">
         <h2 class="visually-hidden">Глэйси в социальных сетях </h2>
         <ul>
-          <li><a href="https://twitter.com" class="social-button twitter">Twitter</a></li>
-          <li><a href="https://instagram.com" class="social-button instagram">Instagram</a></li>
-          <li><a href="https://facebook.com" class="social-button facebook">Facebook</a></li>
-          <li><a href="https://vk.com" class="social-button vk">VK</a></li>
+          <li><a href="https://twitter.com" class="social-button twitter"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a href="https://instagram.com" class="social-button instagram"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a href="https://facebook.com" class="social-button facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="https://vk.com" class="social-button vk"><span class="visually-hidden">VK</span></a></li>
         </ul>
       </section>
 
