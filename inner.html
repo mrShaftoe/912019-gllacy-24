@@ -25,27 +25,27 @@
       </nav>
 
       <section class="user-menu">
-          <div class="user-menu-item">
-            <a href="search.html" class="button search-button"><span class="visually-hidden">Поиск</span></a>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="search-field" class="visually-hidden">Поиск</label>
-              <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-              <button type="submit" class="visually-hidden">Искать</button>
-            </form>
-          </div>
-  
-          <div class="user-menu-item">
-            <a href="login.html" class="button login-button"><span class="visually-hidden">Вход</span></a>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="login-field" class="visually-hidden">Электронная почта</label>
-              <input type="text" name="login" id="login-field" placeholder="Электронная почта">
-              <label for="passsword-field" class="visually-hidden">Пароль</label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль">
-              <a href="forgot-password.html">Забыли пароль?</a>
-              <a href="register.html">Новая регистрация</a>
-              <button type="submit" class="button">Войти</button>
-            </form>
-          </div>
+        <div class="user-menu-item">
+          <a href="search.html" class="button search-button"><span class="visually-hidden">Поиск</span></a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="search-field" class="visually-hidden">Поиск</label>
+            <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+            <button type="submit" class="visually-hidden">Искать</button>
+          </form>
+        </div>
+
+        <div class="user-menu-item">
+          <a href="login.html" class="button login-button"><span class="visually-hidden">Вход</span></a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="login-field" class="visually-hidden">Электронная почта</label>
+            <input type="text" name="login" id="login-field" placeholder="Электронная почта">
+            <label for="passsword-field" class="visually-hidden">Пароль</label>
+            <input type="password" name="password" id="password-field" placeholder="Пароль">
+            <a href="forgot-password.html">Забыли пароль?</a>
+            <a href="register.html">Новая регистрация</a>
+            <button type="submit" class="button">Войти</button>
+          </form>
+        </div>
 
         <div class="user-menu-item">
           <a href="cart.html" class="button cart-button">2 товара</a>
@@ -102,10 +102,10 @@
             <div class="catalog-options-section range-filter">
               <p class="price-controls">Цена:
                 <label class="min-price">
-                  <input type="text" name="min-price" value="100"> руб.
+                  <input type="text" name="min-price" value="100" aria-label="Минимальная цена"> руб.
                 </label>-
                 <label class="max-price">
-                  <input type="text" name="max-price" value="500"> руб.
+                  <input type="text" name="max-price" value="500" aria-label="Максимальная цена"> руб.
                 </label>
               </p>
 
@@ -113,8 +113,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" aria-label="Ползунок минимальной цены"></div>
+                <div class="toggle toggle-max" aria-label="Ползунок максимальной цены"></div>
               </div>
             </div>
 
