@@ -30,6 +30,10 @@ body {
     font-size: 16px;
 }
 
+.inner-page {
+    background-color: #849d8f;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -113,11 +117,42 @@ img {
     box-shadow: none;
 }
 
+.user-menu-item .cart-not-empty {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cart-items ul{
+    padding: 0;
+    list-style: none;
+}
+
+.cart-item {
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.cart-item-price {
+    color: #999999;
+}
+
+.total-cost {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.cart-items .button {
+    color: #ffffff;
+}
+
 .user-menu-item a {
     font-size: 13px;
     line-height: 24px;
     color: #000000
 }
+
 
 .work-info {
     font-weight: 700;
@@ -132,6 +167,23 @@ img {
 .phone {
     font-size: 22px;
     line-height: 24px;
+}
+.breadcrumbs {
+    padding:0;
+    list-style: none;
+}
+.breadcrumbs-item a{
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #ffffff;
 }
 
 .slide-title {
@@ -200,6 +252,18 @@ img {
 
 .catalog-item .weight {
     font-size: 30px;
+}
+
+.catalog-pagination {
+    padding: 0;
+    list-style: 0;
+}
+
+.pagination-number {
+    font-weight: 500;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .shop-info {
