@@ -14,14 +14,14 @@
 
       <nav class="main-navigation">
         <ul>
-          <li class="main-navigation-item">
-            <a href="catalog.html" class="current">Каталог</a>
+          <li class="main-navigation-item dropdown">
+            <a href="inner.html" class="current">Каталог</a>
             <ul class="sub-menu">
               <li>
                 <a href="new-products.html" class="new">Новинки</a>
               </li>
               <li>
-                <a href="inner.html"  class="current">Сливочное</a>
+                <a class="current">Сливочное</a>
               </li>
               <li>
                 <a href="sorbets.html">Щербеты</a>
@@ -139,28 +139,32 @@
 
             <fieldset class="catalog-options-section">
               <legend>Жирность:</legend>
-              <input type="radio" name="fat-content" id="zero-fat" value="0">
-              <label for="zero-fat">0%</label>
-              <input type="radio" name="fat-content" id="ten-fat" value="10" checked>
-              <label for="ten-fat">до 10%</label>
-              <input type="radio" name="fat-content" id="thirty-fat" value="30">
-              <label for="thirty-fat">до 30%</label>
-              <input type="radio" name="fat-content" id="more-fat" value="100">
-              <label for="more-fat">выше 30%</label>
+              <div class="catalog-options-fieldset">  
+                <input type="radio" name="fat-content" id="zero-fat" value="0">
+                <label for="zero-fat">0%</label>
+                <input type="radio" name="fat-content" id="ten-fat" value="10" checked>
+                <label for="ten-fat">до 10%</label>
+                <input type="radio" name="fat-content" id="thirty-fat" value="30">
+                <label for="thirty-fat">до 30%</label>
+                <input type="radio" name="fat-content" id="more-fat" value="100">
+                <label for="more-fat">выше 30%</label>
+              </div>
             </fieldset>
 
             <fieldset class="catalog-options-section">
               <legend>Наполнители:</legend>
-              <input type="checkbox" name="choco" id="choco" checked>
-              <label for="choco">шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" name="fruits" id="fruits">
-              <label for="fruits">фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup">
-              <label for="syrup">сироп</label>
-              <input type="checkbox" name="jam" id="jam">
-              <label for="jam">джем</label>
+              <div class="catalog-options-fieldset">
+                <input type="checkbox" name="choco" id="choco" checked>
+                <label for="choco">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar" checked>
+                <label for="sugar">сахарные присыпки</label>
+                <input type="checkbox" name="fruits" id="fruits">
+                <label for="fruits">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup">
+                <label for="syrup">сироп</label>
+                <input type="checkbox" name="jam" id="jam">
+                <label for="jam">джем</label>
+              </div>
             </fieldset>
 
             <button type="submit" class="button">Применить</button>

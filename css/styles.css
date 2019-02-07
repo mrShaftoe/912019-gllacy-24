@@ -38,6 +38,7 @@ html {
 body {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
+    line-height: 18px;
 }
 
 .inner-page {
@@ -62,6 +63,9 @@ a:active {
 }
 .site-wrapper {
     background-color: #849d8f;
+    background-image: url("../img/slider/slide-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
     height: 100%;
 }
 
@@ -79,6 +83,7 @@ a:active {
     line-height: 24px;
     color: #ffffff;
     text-decoration: none;
+    padding: 0;
     border: none;
     outline: 0;
     box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
@@ -105,7 +110,7 @@ a:active {
 
 .main-navigation {
     font-weight: 700;
-    line-height: 18px;
+    
 }
 
 .main-navigation ul {
@@ -132,10 +137,15 @@ a:active {
 }
 
 .sub-menu {
+    display: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     background-color: #ffffff;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
 }
 
 .sub-menu a {
@@ -162,22 +172,30 @@ a:active {
     font-weight: 700;
 }
 
-.user-menu form,
-.user-menu .cart-items {
+.user-menu-item form,
+.user-menu-item .cart-items {
+    display: none;
     background-color: #f8f7f4;
 }
+.user-menu-item {
+    outline: 1px dotted green;
+}
+.user-menu-item:hover form,
+.user-menu-item:hover .cart-items {
+    display: block
+}
 
-.user-menu input {
+.user-menu-item input {
     border: 1px solid #d3d3d2;
     font-weight: 700;
     line-height: 24px;
 }
 
-.user-menu input:hover {
+.user-menu-item input:hover {
     border-color: #c7c6c5;
 }
 
-.user-menu input::placeholder {
+.user-menu-item input::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -221,7 +239,7 @@ a:active {
 .total-cost {
     font-size: 15px;
     font-weight: 700;
-    line-height: 18px;
+    
 }
 
 .cart-items .button {
@@ -359,7 +377,7 @@ a:active {
 
 .pagination-number {
     font-weight: 500;
-    line-height: 18px;
+    
     color: #ffffff;
     text-decoration: none;
 }
@@ -511,7 +529,7 @@ a:active {
 
 .info-link a {
     font-size: 13px;
-    line-height: 18px;
+    
 }
 
 .suppliers {
@@ -520,10 +538,68 @@ a:active {
 
 .developer-info {
     font-size: 12px;
-    line-height: 18px;
+    
     color: #fefefe;
 }
 
 .modal {
     display: none;
+}
+
+.catalog-options-section {
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0;
+}
+
+.catalog-options-section legend,
+.catalog-options-section .price-controls {
+    font-size: 14px;
+    
+}
+
+.catalog-options-section select {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    
+    color: #ffffff;
+}
+
+.catalog-options-section select:focus {
+    color: #000000;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.range-filter input {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+}
+
+.catalog-options-fieldset,
+.range-controls {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-options form > .button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #ffffff;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+}
+
+.catalog-options form > .button:hover,
+.catalog-options form > .button:focus,
+.catalog-options form > .button:active {
+    color: #323232;
+    background-color: #f8f7f4;
 }
