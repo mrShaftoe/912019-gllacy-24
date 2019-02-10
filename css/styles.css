@@ -121,8 +121,9 @@ a:active {
 }
 
 .main-header.container {
-    padding-top: 40px;
+    padding-top: 10px;
 }
+
 .logo {
     margin-right: 20px;
 }
@@ -287,24 +288,27 @@ a:active {
     position: absolute;
     width: 267px;
     right: 27px;
-    top: 100%;
+    top: 90%;
     font-weight: 700;
     color: #ffffff;
     text-align: right;
 }
 
-.worktime {
+.work-time {
     font-size: 14px;
     line-height: 16px;
+    margin: 0;
 }
 
 .phone {
     font-size: 22px;
     line-height: 24px;
+    margin: 0;
 }
 .breadcrumbs {
     padding:0;
     list-style: none;
+    display: flex;
 }
 .breadcrumbs-item a{
     font-size: 14px;
@@ -382,6 +386,7 @@ a:active {
     color: #ffffff;
     width: 267px;
     margin-right: 26px;
+    margin-bottom: 40px;
 }
 
 .catalog-item img {
@@ -404,6 +409,7 @@ a:active {
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
+    margin: 0;
 }
 
 .catalog-item .weight {
@@ -412,12 +418,13 @@ a:active {
 
 .catalog-pagination {
     padding: 0;
-    list-style: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pagination-number {
     font-weight: 500;
-    
     color: #ffffff;
     text-decoration: none;
 }
