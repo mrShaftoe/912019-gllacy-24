@@ -41,6 +41,11 @@ body {
     line-height: 18px;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+}
 .inner-page {
     background-color: #849d8f;
 }
@@ -67,6 +72,7 @@ a:active {
     background-repeat: no-repeat;
     background-position: top center;
     height: 100%;
+    margin-top: -1px;
 }
 
 .visually-hidden {
@@ -108,14 +114,29 @@ a:active {
         linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
 }
 
+.main-header {
+    display: flex;
+    position: relative;
+
+}
+
+.main-header.container {
+    padding-top: 40px;
+}
+.logo {
+    margin-right: 20px;
+}
+
 .main-navigation {
     font-weight: 700;
-    
+    margin-right: auto;
 }
 
 .main-navigation ul {
+    margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .main-navigation a {
@@ -136,7 +157,7 @@ a:active {
     background-color: #ededed;
 }
 
-.sub-menu {
+.dropdown .sub-menu {
     display: none;
     font-size: 14px;
     font-weight: 400;
@@ -172,14 +193,15 @@ a:active {
     font-weight: 700;
 }
 
+.user-menu {
+    display: flex;
+}
 .user-menu-item form,
 .user-menu-item .cart-items {
     display: none;
     background-color: #f8f7f4;
 }
-.user-menu-item {
-    outline: 1px dotted green;
-}
+
 .user-menu-item:hover form,
 .user-menu-item:hover .cart-items {
     display: block
@@ -262,8 +284,13 @@ a:active {
 
 
 .work-info {
+    position: absolute;
+    width: 267px;
+    right: 27px;
+    top: 100%;
     font-weight: 700;
     color: #ffffff;
+    text-align: right;
 }
 
 .worktime {
@@ -313,8 +340,15 @@ a:active {
 .promo {
     font-weight: 700;
     color: #ffffff;
+    display: flex;
+    margin-right: -26px;
+    margin-bottom: 40px;
 }
 
+.promo-item {
+    width: 560px;
+    margin-right: 26px;
+}
 .promo-title {
     font-size: 35px;
     line-height: 41px;
@@ -338,10 +372,16 @@ a:active {
 .catalog-items ul{
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -26px;
+    margin-bottom: 40px;
 }
 
 .catalog-item {
     color: #ffffff;
+    width: 267px;
+    margin-right: 26px;
 }
 
 .catalog-item img {
@@ -393,6 +433,16 @@ a:active {
     background-color: #ffffff;
     color: #323232;
 } 
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -26px;
+}
+
+.about-us-item {
+    margin-right: 26px;
+    margin-bottom: 40px;
+}
 
 .shop-info {
     background-color: #eee2cb;
@@ -415,6 +465,7 @@ a:active {
 }
 
 .blog {
+    width: 560px;
     background-color: #ffffff;
     background-image: url("../img/backgrounds/strawberry-bg.jpg");
     background-repeat: no-repeat;
@@ -441,6 +492,7 @@ a:active {
 }
 
 .subscribe {
+    width: 560px;
     background-color: #f8f7f4;
     border: 5px solid transparent;
 }
@@ -466,7 +518,16 @@ a:active {
     line-height: 24px;
 }
 
+.map-contacts {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
 .contacts {
+    position: absolute;
+    top: 63px;;
+    right: 26px;
     background-color: #ffffff;
 }
 
@@ -484,9 +545,20 @@ a:active {
     color: #323232;
 }
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    width: 267px;
+}
+
 .social ul{
+    margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .social-button {
@@ -522,9 +594,14 @@ a:active {
     background-image: url("../img/icons/vk.svg");
 }
 
-.info-links ul{
+.info-links {
+    width: 560px;
+}
+
+.info-links ul {
+    margin: 0;
     padding: 0;
-    list-style: 0;
+    list-style: none;
 }
 
 .info-link a {
@@ -537,8 +614,8 @@ a:active {
 }
 
 .developer-info {
+    width: 267px;
     font-size: 12px;
-    
     color: #fefefe;
 }
 
