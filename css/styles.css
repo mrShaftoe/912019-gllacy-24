@@ -306,6 +306,8 @@ a:active {
     margin: 0;
 }
 .breadcrumbs {
+    margin: 0;
+    margin-bottom: 10px;
     padding:0;
     list-style: none;
     display: flex;
@@ -322,6 +324,17 @@ a:active {
     font-weight: 700;
     line-height: 41px;
     color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.slider {
+    position: relative;
+    margin-bottom: 40px;
+}
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slider-item:not(:first-child) {
@@ -332,13 +345,28 @@ a:active {
     font-size: 60px;
     font-weight: 700;
     line-height: 60px;
+    text-align: center;
     color: #ffffff;
+    width: 700px;
+    margin-top: 310px;
+    margin-bottom: 25px;
+}
+
+.slider-pagination {
+    position:absolute;
+    bottom: 0;
+    left: 0; 
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+
 }
 
 .slider .button {
     font-size: 32px;
     line-height: 44px;
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    
 }
 
 .promo {
@@ -453,14 +481,18 @@ a:active {
 .shop-info {
     background-color: #eee2cb;
     background-image: url("../img/backgrounds/waffle-pattern-bg.jpg");
+    padding: 25px 20px;
 }
 
 .shop-info ul {
     padding: 0;
     list-style: none;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-right: -26px;
 }
 
-.shop-info .lead {
+.shop-info-lead {
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
@@ -468,6 +500,10 @@ a:active {
 
 .shop-info-paragraph {
     line-height: 22px;
+    width: 540px;
+    margin-right: 26px;
+    margin-bottom: 10px;
+    padding-left: 50px;
 }
 
 .blog {
@@ -531,6 +567,7 @@ a:active {
 }
 
 .contacts {
+    width: 302px;
     position: absolute;
     top: 63px;;
     right: 26px;
@@ -554,6 +591,9 @@ a:active {
 .main-footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .social {
@@ -608,11 +648,17 @@ a:active {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.info-links li {
+    width: 280px;
 }
 
 .info-link a {
-    font-size: 13px;
-    
+    font-size: 13px;    
 }
 
 .suppliers {
@@ -623,6 +669,11 @@ a:active {
     width: 267px;
     font-size: 12px;
     color: #fefefe;
+    padding-left: 78px;
+}
+
+.developer-info p {
+    margin: 0;
 }
 
 .modal {
@@ -634,6 +685,16 @@ a:active {
     color: #ffffff;
     font-weight: 500;
     padding: 0;
+}
+
+.catalog-options {
+    width: 897px;
+}
+
+.catalog-options form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .catalog-options-section legend,
