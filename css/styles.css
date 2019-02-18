@@ -123,7 +123,7 @@ a:active {
     display: flex;
     position: relative;
     align-items: center;
-
+    margin-bottom: 20px;
 }
 
 .main-header.container {
@@ -486,9 +486,10 @@ hr {
     line-height: 24px;
     margin: 0;
 }
+
 .breadcrumbs {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     padding:0;
     list-style: none;
     display: flex;
@@ -497,7 +498,7 @@ hr {
 .breadcrumbs-item:not(:last-child)::after {
     content: "»";
     color: #ffffff;
-    margin: 0px 8px;
+    margin: 0px 6px;
 }
 
 .breadcrumbs-item a{
@@ -511,7 +512,7 @@ hr {
     line-height: 41px;
     color: #ffffff;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 .slider {
     position: relative;
@@ -534,7 +535,7 @@ hr {
     text-align: center;
     color: #ffffff;
     width: 700px;
-    margin-top: 313px;
+    margin-top: 293px;
     margin-bottom: 33px;
 }
 
@@ -615,6 +616,9 @@ hr {
     background-image: url("../img/backgrounds/chocolate-bg.jpg");
     background-repeat: no-repeat;
 }
+.catalog-items {
+    margin-bottom: 24px;
+}
 
 .catalog-items ul{
     padding: 0;
@@ -623,6 +627,7 @@ hr {
     flex-wrap: wrap;
     margin: 0;
     margin-right: -26px;
+    margin-bottom: -24px;
     position: relative;
     z-index: 0;
 }
@@ -631,7 +636,7 @@ hr {
     color: #ffffff;
     width: 266px;
     margin-right: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     position: relative;
 }
 
@@ -719,16 +724,19 @@ hr {
 }
 
 .catalog-pagination {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    margin-top: 74px;
+
 }
 
 .pagination-item {
-    margin-right: 5px;
+    margin-right: 1px;
 }
 
 .pagination-item a {
@@ -807,6 +815,7 @@ hr {
     display: flex; 
     flex-wrap: wrap;
     margin-right: -26px;
+    margin-bottom: -4px;
 }
 
 .shop-info-lead {
@@ -1005,7 +1014,7 @@ hr {
 }
 
 .social li {
-    margin-right: 11px;
+    margin-right: 18px;
 }
 
 .social-button {
@@ -1015,8 +1024,8 @@ hr {
     height: 32px;
     display: block;
     opacity: 0.8;
-    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1050,7 +1059,7 @@ hr {
 
 .info-links {
     width: 560px;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .info-links ul {
@@ -1100,7 +1109,7 @@ hr {
     font-size: 12px;
     color: #fefefe;
     padding-left: 78px;
-    margin-top: -12px;
+    margin-top: -8px;
 }
 
 .developer-info p {
@@ -1113,11 +1122,13 @@ hr {
 
 .catalog {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 25px;
 }
 
 .catalog-options {
     width: 879px;
     margin-right: -14px;
+    margin-bottom: 25px;
 }
 
 .catalog-options form {
@@ -1131,15 +1142,16 @@ hr {
     font-weight: 500;
     padding: 0;
     margin: 0;
-    margin-right: 14px;
-    margin-bottom: 15px;
+    margin-right: 13px;
+    margin-bottom: 13px;
 }
 
 .catalog-options-section legend,
 .catalog-options-section .price-controls {
     font-size: 14px;
     margin: 0;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;  
+    padding-left: 15px;  
 }
 
 .catalog-options-section .select {
@@ -1228,17 +1240,23 @@ hr {
     display: block;
     padding-top: 9.2px;
     padding-bottom: 10.2px;
-    padding-left: 35px;
+    padding-left: 34px;
     margin-right: 16px;
     position: relative;
 }
 
-.catalog-option-fieldset.fill label {
-    margin-right: 20px;
+.catalog-options-fieldset.fill label {
+    margin-right: 18px;
 }
+
+.catalog-options-fieldset.fill label:nth-of-type(3)  {
+    margin-right: 22px;
+}
+
 .catalog-options-fieldset label:last-child {
     margin-right: 0;
 }
+
 
 .catalog-options-section input[type="radio"] + label::before {
     content: "";
@@ -1249,7 +1267,7 @@ hr {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -11px;
+    margin-top: -13px;
 }
 
 .catalog-options-section input[type="radio"]:checked + label::before {
@@ -1258,8 +1276,8 @@ hr {
 
 .catalog-options-section input[type="checkbox"] + label::before {
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     position: absolute;
@@ -1290,9 +1308,9 @@ hr {
     box-shadow: none;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
-    padding: 7.7px 15px;
+    padding: 7px 28px;
     margin-bottom: 15px;
-    margin-left: 65px;
+    margin-left: 4px;
     align-self: flex-end;
 }
 
