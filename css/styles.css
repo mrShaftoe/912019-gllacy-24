@@ -393,6 +393,33 @@ hr {
     height: 11px;
     margin-right: 15px;
     margin-top: 10px;
+    position: relative;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cart-item .button-delete:active {
+    opacity: 0.5;
+}
+
+.cart-item .button-delete::before,
+.cart-item .button-delete::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    background-color: #535050;
+}
+
+.cart-item .button-delete::before {
+    transform: rotate(45deg);
+}
+
+.cart-item .button-delete::after {
+    transform: rotate(-45deg);
 }
 
 .cart-item-name {
