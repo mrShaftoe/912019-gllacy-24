@@ -76,6 +76,7 @@ a:active {
     background-repeat: no-repeat;
     background-position: top center;
     height: 100%;
+    min-width: 1200px;
 }
 
 .visually-hidden {
