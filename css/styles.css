@@ -653,7 +653,7 @@ hr {
     border-top-right-radius: 5px;
 }
 
-.catalog-item.hit::before {
+.catalog-item.hit::after {
     content: "";
     width: 61px;
     height: 61px;
