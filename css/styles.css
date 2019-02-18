@@ -1120,6 +1120,10 @@ hr {
     display: none;
 }
 
+.modal-show {
+    display: block;
+    position: fixed;
+}
 .catalog {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 25px;
@@ -1319,4 +1323,104 @@ hr {
 .catalog-options form > .button:active {
     color: #323232;
     background-color: #f8f7f4;
+}
+
+.write-us {
+    font-size: 16px;
+    top: 33%;
+    left: 50%;
+    margin-left: -239px;
+    padding: 20px 27px;
+    width: 478px;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.write-us .write-us-title {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.write-us form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.write-us form > * {
+    margin-bottom: 20px;
+} 
+
+.write-us input,
+.write-us textarea {
+    border: 1px solid #d3d3d2;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+    border-color: #c7c6c5;
+}
+
+.write-us input::placeholder,
+.write-us textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.write-us input {
+    width: 267;
+}
+
+.write-us textarea {
+    width: 428px;
+    resize: none;
+}
+
+.write-us .button {
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.write-us .button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    width: 18px;
+    height: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.write-us .button-close::before,
+.write-us .button-close::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    background-color: #000000;
+}
+
+.write-us .button-close::before {
+    transform: rotate(45deg);
+}
+
+.write-us .button-close::after {
+    transform: rotate(-45deg);
+}
+
+.write-us .button-close:active {
+    opacity: 0.5;
 }
