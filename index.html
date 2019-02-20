@@ -7,7 +7,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <div class="site-wrapper">
+    
       <header class="main-header container">
         <a class="logo">
           <img src="img/logo.svg" alt="Логотип Gllacy Shop" width="154" height="64">
@@ -17,10 +17,9 @@
             <li class="main-navigation-item dropdown">
               <a href="inner.html">Каталог</a>
               <ul class="sub-menu">
-                <li>
-                  <a href="new-products.html" class="new">Новинки</a>
+                <li class="new">
+                  <a href="new-products.html">Новинки</a>
                 </li>
-                <hr>
                 <li>
                   <a href="inner.html">Сливочное</a>
                 </li>
@@ -106,6 +105,24 @@
               <li><span class="visually-hidden">1</span></li>
               <li><span class="visually-hidden">2</span></li>
               <li><span class="visually-hidden">3</span></li>
+            </ul>
+            <ul class="slider-pagination">
+              <li>
+                <button type="button" class="slider-button" data-index="1" disabled>
+                  <span class="visually-hidden">1</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="slider-button" data-index="2">
+                  <span class="visually-hidden">2</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="slider-button" data-index="3">
+                  <span class="visually-hidden">3</span>
+                </button>
+              </li>
+              
             </ul>
           </section>
 
@@ -269,6 +286,6 @@
         </form>
         <button type="button" class="button-close"><span class="visually-hidden">Закрыть окно</span></button>
       </section>
-    </div>
+  
   </body>
 </html>
