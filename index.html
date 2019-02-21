@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body class="slide-1">
     <header class="main-header container">
       <a class="logo">
         <img src="img/logo.svg" alt="Логотип Gllacy Shop" width="154" height="64">
@@ -85,7 +85,7 @@
         <h1 class="visually-hidden">Глейси - магазин мороженого собственного производства</h1>
         
         <section class="slider">
-          <div class="slider-item">
+          <div class="slider-item" data-active>
             <h3 class="slide-title">Крем-брюле и пломбир
               с малиновым джемом</h3>
             <a href="#" class="button">Давайте оба!</a>  
@@ -107,17 +107,17 @@
           </ul>
           <ul class="slider-pagination">
             <li>
-              <button type="button" class="slider-button" data-index="1" disabled>
+              <button type="button" class="slider-button" data-index="0" disabled>
                 <span class="visually-hidden">1</span>
               </button>
             </li>
             <li>
-              <button type="button" class="slider-button" data-index="2">
+              <button type="button" class="slider-button" data-index="1">
                 <span class="visually-hidden">2</span>
               </button>
             </li>
             <li>
-              <button type="button" class="slider-button" data-index="3">
+              <button type="button" class="slider-button" data-index="2">
                 <span class="visually-hidden">3</span>
               </button>
             </li>
