@@ -1269,18 +1269,35 @@ a:active {
     width: 194px;
     border: none;
     background-color: rgba(255, 255, 255, 0.2);
+    background-image: url("../img/icons/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     padding: 7.1px 30px 9.1px 14px;
     border-radius: 19px;
     color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
 }
+ 
+.catalog-options-section select::-ms-expand {
+  display: none;
+}
+
 
 .catalog-options-section select:focus {
     color: #000000;
     background-color: #ffffff;
+    background-image:  url("../img/icons/select-arrow-black.svg");
     outline: none;
+}
+
+.catalog-options-section option {
+    color: #000000;
 }
 
 .range-filter input {
@@ -1448,7 +1465,7 @@ a:active {
 
 .write-us {
     font-size: 16px;
-    top: 33%;
+    top: 20%;
     left: 50%;
     margin-left: -239px;
     padding: 20px 27px;
