@@ -4,6 +4,7 @@ var writeUsCloseButton = writeUs.querySelector(".button-close");
 
 popUpButton.addEventListener("click",function (evt) {
     evt.preventDefault();
+    writeUs.classList.remove("modal-error");
     writeUs.classList.add("modal-show");
 });
 
@@ -44,3 +45,18 @@ for (var i = 0; i < buttons.length; i++) {
         switchSlideImage(body, "slide-", index+1);
     });
 }
+
+var writeUsForm = writeUs.querySelector("form");
+
+writeUsForm.addEventListener("submit", function(evt) {
+    var inputs = writeUsForm.querySelectorAll("input[type=text], textarea");
+    for (var i = 0; i < inputs.length; i++) {
+        if (!inputs[i].value) {
+            evt.preventDefault();
+            writeUs.classList.remove("modal-error");
+            writeUs.offsetWidth = writeUs.offsetWidth;
+            writeUs.classList.add("modal-error");
+            break;
+        }
+    }
+}); 
