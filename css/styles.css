@@ -610,6 +610,7 @@ a:active {
     margin: 0;
     margin-bottom: 28px;
 }
+
 .slider {
     position: relative;
     margin-bottom: 40px;
@@ -700,6 +701,7 @@ a:active {
     border-radius: 15px;
     background-size: cover;
 }
+
 .promo-title {
     font-size: 35px;
     line-height: 41px;
@@ -718,6 +720,7 @@ a:active {
     margin-bottom: 9px;
     align-self: flex-end;
 }
+
 .promo .raspberry {
     background-image: url("../img/backgrounds/raspberry-bg.jpg");
     background-repeat: no-repeat;
@@ -727,6 +730,7 @@ a:active {
     background-image: url("../img/backgrounds/chocolate-bg.jpg");
     background-repeat: no-repeat;
 }
+
 .catalog-items {
     margin-bottom: 28px;
 }
@@ -844,7 +848,6 @@ a:active {
     align-items: center;
     margin-bottom: 33px;
     margin-top: 74px;
-
 }
 
 .pagination-item {
@@ -1354,9 +1357,9 @@ a:active {
     -ms-appearance: none;
     appearance: none;
 }
- 
+
 .catalog-options-section select::-ms-expand {
-  display: none;
+display: none;
 }
 
 
@@ -1539,6 +1542,7 @@ a:active {
     font-size: 16px;
     top: 20%;
     left: 50%;
+    z-index: 5;
     margin-left: -239px;
     padding: 20px 27px;
     width: 478px;
