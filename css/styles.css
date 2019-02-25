@@ -345,12 +345,14 @@ a:active {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 .user-menu-item input::-ms-input-placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 
@@ -358,12 +360,14 @@ a:active {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 .user-menu-item input::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 .user-menu-item  .user-menu-button {
@@ -543,7 +547,7 @@ a:active {
     display: block;
     font-size: 13px;
     line-height: 24px;
-    color: #000000;
+    color: #323232;
     text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -629,7 +633,7 @@ a:active {
 .slide-title {
     font-size: 60px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 60.5px;
     text-align: center;
     color: #ffffff;
     width: 700px;
@@ -656,7 +660,6 @@ a:active {
     height: 21px;
     border: 2px solid #ffffff;
     border-radius: 50%;
-    margin-right: 8px;
     cursor: pointer;
     background-color: transparent;
     outline: none;
@@ -717,8 +720,14 @@ a:active {
 }
 
 .promo-item .button {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    margin-right: 2px;
     align-self: flex-end;
+    padding: 8px 23px 14px;
+}
+
+.chocolate .button {
+    padding: 8px 22px 14px;
 }
 
 .promo .raspberry {
@@ -732,7 +741,7 @@ a:active {
 }
 
 .catalog-items {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .catalog-items ul{
@@ -907,7 +916,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     margin-right: -26px;
-    margin-top: -13px;
+    
 }
 
 .about-us-item {
@@ -922,6 +931,7 @@ a:active {
     padding-bottom: 13px;
     border-radius: 15px;
     width: 1146px;
+    color: #323232;
 }
 
 .shop-info ul {
@@ -931,7 +941,7 @@ a:active {
     display: flex; 
     flex-wrap: wrap;
     margin-right: -26px;
-    margin-bottom: -2px;
+    margin-bottom: 1px;
 }
 
 .shop-info-lead {
@@ -939,16 +949,16 @@ a:active {
     font-weight: 500;
     line-height: 30px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .shop-info-paragraph {
     line-height: 22px;
     width: 540px;
     margin-right: 26px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     padding-left: 56px;
-    padding-top: 10px;
+    padding-top: 13px;
     background-repeat: no-repeat;
     background-position: top left;;
 }
@@ -977,6 +987,7 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
+    color: #323232;
 }
 
 .blog-label-new {
@@ -995,8 +1006,8 @@ a:active {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-    color: #000000;
-    text-decoration-color: #000000;
+    color: #323232;
+    text-decoration-color: #323232;
 }
 
 .blog-title a:hover,
@@ -1050,7 +1061,7 @@ a:active {
     font-weight: 700;
     line-height: 24px;
     margin-right: 10px;
-    padding: 10px 15px;
+    padding: 8px 15px 12px;
     border: 1px solid rgba(178, 178, 178, 0.52);
     border-radius: 5px;
     flex-grow: 1;
@@ -1071,16 +1082,18 @@ a:active {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 .subscribe input::placeholder {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    color: #999999;
 }
 
 .subscribe .button {
-    padding: 10px 19px;
+    padding: 6px 18px 14px;
 }
 
 .map-contacts {
@@ -1097,6 +1110,7 @@ a:active {
     height: 100%;
     position: relative;
     z-index: 1;
+    border:0;
 }
 
 .map img {
@@ -1120,11 +1134,11 @@ a:active {
     flex-direction: column;
     width: 302px;
     position: absolute;
-    top: 63px;;
+    top: 62px;;
     left: 50%;
     margin-left: 271px;
     z-index: 2;
-    padding: 27px 25px;
+    padding: 27px 25px 25px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1157,13 +1171,14 @@ a:active {
 .contacts .button {
     margin-top: 25px;
     margin-bottom: 5px;
+    padding: 7px 27px 14px;
 }
 
 .main-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     align-items: center;
 }
 
@@ -1174,6 +1189,7 @@ a:active {
 .social ul{
     width: 267px;
     margin: 0;
+    margin-left: 5px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -1182,7 +1198,7 @@ a:active {
 }
 
 .social li {
-    margin-right: 18px;
+    margin-right: 17px;
 }
 
 .social-button {
@@ -1240,7 +1256,7 @@ a:active {
 
 .info-link {
     padding: 0 5px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .info-link:nth-child(2n) {
@@ -1328,6 +1344,7 @@ a:active {
 .catalog-options-section legend,
 .catalog-options-section .price-controls {
     font-size: 14px;
+    line-height: 16px;
     margin: 0;
     margin-bottom: 5px;  
     padding-left: 15px;  
@@ -1335,8 +1352,6 @@ a:active {
 
 .catalog-options-section.select {
     width: 194px;
-    font-size: 16px;
-    line-height: 18px;
 }
 
 .catalog-options-section select {
@@ -1345,11 +1360,11 @@ a:active {
     background-color: rgba(255, 255, 255, 0.2);
     background-image: url("../img/icons/select-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 95% 50%;
+    background-position: 92% 55%;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    padding: 7.1px 30px 9.1px 14px;
+    padding: 10.2px 30px 9.2px 14px;
     border-radius: 19px;
     color: #ffffff;
     -webkit-appearance: none;
@@ -1362,6 +1377,10 @@ a:active {
 display: none;
 }
 
+.catalog-options-section select:hover {
+    color: #000000;
+    background-image:  url("../img/icons/select-arrow-black.svg");
+}
 
 .catalog-options-section select:focus {
     color: #000000;
@@ -1376,6 +1395,7 @@ display: none;
 
 .range-filter input {
     width: 27px;
+    padding: 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -1416,14 +1436,27 @@ display: none;
     cursor: pointer;
 }
 
+.range-filter .toggle:hover {
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    border-width: 9.5px;
+}
 .range-filter .toggle-min {
     left: -3px;
 }
+.range-filter .toggle-min:hover {
+    left: -5px;
+}
 
 .range-filter .toggle-max {
-    right: 0;
-    margin-right: -10px;
+    right: -10px;
 }
+
+.range-filter .toggle-max:hover {
+    right: -12px;
+}
+
 .catalog-options-fieldset,
 .range-controls {
     display: flex;
@@ -1443,6 +1476,14 @@ display: none;
     margin-right: 16px;
     position: relative;
     cursor: pointer;
+}
+
+
+.catalog-options-fieldset input:disabled + label,
+.catalog-options-fieldset input:disabled + label:before,
+.catalog-options-fieldset input:disabled + label:after {
+    opacity: 0.4;
+    cursor: default;
 }
 
 .catalog-options-fieldset label::before,
@@ -1525,17 +1566,24 @@ display: none;
     box-shadow: none;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
-    padding: 7px 28px;
-    margin-bottom: 15px;
+    padding: 7.7px 28px;
+    margin-bottom: 13px;
     margin-left: 4px;
     align-self: flex-end;
 }
 
 .catalog-options form > .button:hover,
-.catalog-options form > .button:focus,
-.catalog-options form > .button:active {
+.catalog-options form > .button:focus {
     color: #323232;
     background-color: #f8f7f4;
+}
+
+.catalog-options form > .button:active {
+    color: #323232;
+    box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
+    border: none;
+    padding: 9.7px 30px;
 }
 
 .write-us {
@@ -1596,6 +1644,7 @@ display: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
 }
 
 .write-us input::placeholder,
