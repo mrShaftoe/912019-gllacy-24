@@ -1,16 +1,19 @@
 var popUpButton = document.querySelector(".write-us-button");
 var writeUs = document.querySelector(".write-us");
 var writeUsCloseButton = writeUs.querySelector(".button-close");
+var overlay = document.querySelector(".overlay");
 
 popUpButton.addEventListener("click",function (evt) {
     evt.preventDefault();
     writeUs.classList.remove("modal-error");
     writeUs.classList.add("modal-show");
+    overlay.classList.add("overlay-show");
 });
 
 writeUsCloseButton.addEventListener("click", function(evt) {
     evt.preventDefault();
     writeUs.classList.remove("modal-show");
+    overlay.classList.remove("overlay-show");
 });
 
 var slider = document.querySelector(".slider");

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stylesmin.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <meta content="telephone=no" name="format-detection">
     <title>HTML Academy: Глейси</title>
@@ -139,7 +139,7 @@
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul>
             <li class="catalog-item hit">
-              <img src="img/catalog/01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="266" height="267">
+              <img src="img/catalog/01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
               <p class="catalog-item-name"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
               <p class="price">
                 310 ₽<span class="catalog-item-weight">/кг</span>
@@ -148,7 +148,7 @@
             </li>
 
             <li class="catalog-item hit">
-              <img src="img/catalog/02.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="266" height="267">
+              <img src="img/catalog/02.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
               <p class="catalog-item-name"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
               <p class="price">
                 380 ₽<span class="catalog-item-weight">/кг</span>
@@ -157,7 +157,7 @@
             </li>
 
             <li class="catalog-item hit">
-              <img src="img/catalog/03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="266" height="267">
+              <img src="img/catalog/03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
               <p class="catalog-item-name"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
               <p class="price">
               355 ₽<span class="catalog-item-weight">/кг</span>
@@ -166,7 +166,7 @@
             </li>
             
             <li class="catalog-item hit">
-              <img src="img/catalog/04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="266" height="267">
+              <img src="img/catalog/04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
               <p class="catalog-item-name"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
               <p class="price">
                 415 ₽<span class="catalog-item-weight">/кг</span>
@@ -267,21 +267,22 @@
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2019</p>
       </section>
     </footer>
-
-    <section class="modal write-us">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <b class="write-us-title">Мы обязательно вам ответим!</b>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name-field" class="visually-hidden">Ваше имя</label>
-        <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-        <label for="email-field" class="visually-hidden">Ваш адрес электронной почты</label>
-        <input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?">
-        <label for="text-field" class="visually-hidden">Текст вашего сообщения</label>
-        <textarea name="text" id="text-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
-        <button type="submit" class="button">Отправить</button>
-      </form>
-      <button type="button" class="button-close"><span class="visually-hidden">Закрыть окно</span></button>
-    </section>
-    <script src="js/scriptsmin.js"></script>
+    <div class="overlay">
+      <section class="modal write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b class="write-us-title">Мы обязательно вам ответим!</b>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="name-field" class="visually-hidden">Ваше имя</label>
+          <input type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+          <label for="email-field" class="visually-hidden">Ваш адрес электронной почты</label>
+          <input type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?">
+          <label for="text-field" class="visually-hidden">Текст вашего сообщения</label>
+          <textarea name="text" id="text-field" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+        <button type="button" class="button-close"><span class="visually-hidden">Закрыть окно</span></button>
+      </section>
+    </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
