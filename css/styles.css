@@ -1553,7 +1553,7 @@ a:active {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    padding: 10.2px 30px 9.2px 15px;
+    padding: 10px 30px 10px 15px;
     border-radius: 19px;
     color: #ffffff;
     -webkit-appearance: none;
@@ -1595,7 +1595,7 @@ display: none;
 
 .range-filter .range-controls {
     width: 220px;
-    padding: 16.5px 22px;
+    padding: 17px 22px;
 }
 
 .range-controls .scale {
@@ -1767,7 +1767,7 @@ display: none;
             box-shadow: none;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
-    padding: 7.7px 28px;
+    padding: 8px 28px;
     margin-top: 21px;
     margin-left: 4px;
     -ms-flex-item-align: start;
