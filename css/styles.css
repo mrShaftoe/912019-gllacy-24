@@ -729,6 +729,7 @@ a:active {
     width: 700px;
     margin-top: 293px;
     margin-bottom: 33px;
+    letter-spacing: 0.001em;
 }
 
 .slider-pagination {
@@ -1093,6 +1094,7 @@ a:active {
     line-height: 30px;
     margin: 0;
     margin-bottom: 8px;
+    letter-spacing: 0.003em;
 }
 
 .shop-info-paragraph {
