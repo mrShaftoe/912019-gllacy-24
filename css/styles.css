@@ -202,7 +202,7 @@ a:active {
 .main-navigation {
     font-weight: 700;
     margin-right: auto;
-    margin-top: -5px;
+    margin-top: -4px;
 }
 
 .main-navigation > ul {
@@ -655,7 +655,7 @@ a:active {
     font-size: 14px;
     line-height: 16px;
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .phone {
@@ -927,8 +927,13 @@ a:active {
     margin: 0;
 }
 
+.catalog-item .price > .price-whitespace {
+    font-size: 27px;
+}
+
 .catalog-item-weight {
     font-size: 30px;
+    margin-left: 5px;
 }
 
 .catalog-item-hover {
@@ -977,6 +982,19 @@ a:active {
 .pagination-item {
     margin-right: 1px;
 }
+
+.pagination-item:last-child {
+    margin-left: -3px;
+}
+
+.pagination-item:nth-child(4) {
+    margin-left: 2px;
+}
+
+.pagination-item:nth-child(2) {
+    margin-left: -4px;
+}
+
 
 .pagination-item a {
     font-weight: 500;
@@ -1197,14 +1215,14 @@ a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .subscribe input {
     font-weight: 700;
     line-height: 24px;
     margin-right: 10px;
-    padding: 8px 15px 12px;
+    padding: 8px 15px 10px;
     border: 1px solid rgba(178, 178, 178, 0.52);
     border-radius: 5px;
     -webkit-box-flex: 1;
@@ -1253,7 +1271,7 @@ a:active {
 }
 
 .subscribe .button {
-    padding: 6px 18px 14px;
+    padding: 7px 18px 13px;
 }
 
 .map-contacts {
@@ -1304,7 +1322,7 @@ a:active {
     left: 50%;
     margin-left: 271px;
     z-index: 2;
-    padding: 28px 25px 25px;
+    padding: 29px 25px 24px;
     background-color: #ffffff;
     border-radius: 15px;
     -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1445,11 +1463,12 @@ a:active {
 
 .info-link:nth-child(2n) {
     width: 175px;
+    padding-left: 3px;
 }
 
 .info-link:nth-child(2n+1) {
     width: 145px;
-    margin-left: 123px;
+    margin-left: 124px;
 }
 
 .info-link a {
@@ -1526,7 +1545,7 @@ a:active {
     font-weight: 500;
     padding: 0;
     margin: 0;
-    margin-right: 13px;
+    margin-right: 14px;
     margin-bottom: 15px;
 }
 
@@ -1536,7 +1555,7 @@ a:active {
     line-height: 16px;
     margin: 0;
     margin-bottom: 5px;  
-    padding-left: 17px;  
+    padding-left: 16px;  
 }
 
 .catalog-options-section.select {
@@ -1583,7 +1602,7 @@ display: none;
 }
 
 .range-filter input {
-    width: 27px;
+    width: 24px;
     padding: 0;
     font-size: 14px;
     font-weight: 500;
@@ -1591,6 +1610,10 @@ display: none;
     color: #ffffff;
     background-color: transparent;
     border: none;
+}
+
+.range-filter .max-price > input {
+    margin-left: 4px;
 }
 
 .range-filter .range-controls {
@@ -1633,14 +1656,14 @@ display: none;
     border-width: 9.5px;
 }
 .range-filter .toggle-min {
-    left: -3px;
+    left: -2px;
 }
 .range-filter .toggle-min:hover {
     left: -5px;
 }
 
 .range-filter .toggle-max {
-    right: -10px;
+    right: -9px;
 }
 
 .range-filter .toggle-max:hover {
@@ -1662,10 +1685,10 @@ display: none;
 
 .catalog-options-fieldset label {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 34px;
-    margin-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 32px;
+    margin-right: 17px;
     position: relative;
     cursor: pointer;
 }
@@ -1696,7 +1719,7 @@ display: none;
 }
 
 .catalog-options-fieldset.fill label {
-    margin-right: 18px;
+    margin-right: 21px;
 }
 
 .catalog-options-fieldset.fill label:nth-of-type(3)  {
@@ -1704,7 +1727,7 @@ display: none;
 }
 
 .catalog-options-fieldset label:last-child {
-    margin-right: 0;
+    margin-right: 2px;
 }
 
 
@@ -1715,7 +1738,7 @@ display: none;
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
-    left: 2px;
+    left: 0;
     top: 50%;
     margin-top: -11px;
 }
@@ -1741,7 +1764,7 @@ display: none;
 .catalog-options-section input[type="checkbox"]:checked + label::after {
     content: "";
     width: 17px;
-    height: 12px;
+    height: 11px;
     border-left: 4px solid #ffffff;
     border-bottom: 4px solid #ffffff;
     -webkit-box-shadow: 
@@ -1756,7 +1779,7 @@ display: none;
     position: absolute;
     left: 4px;
     top: 50%;
-    margin-top: -11px;
+    margin-top: -9px;
 }
 .catalog-options form > .button {
     font-size: 16px;
@@ -1767,9 +1790,9 @@ display: none;
             box-shadow: none;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #ffffff;
-    padding: 8px 28px;
+    padding: 7.7px 28px;
     margin-top: 21px;
-    margin-left: 4px;
+    margin-left: 2px;
     -ms-flex-item-align: start;
         align-self: flex-start;
 }
